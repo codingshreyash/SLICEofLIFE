@@ -1,18 +1,18 @@
 <p align="center">
-    <img src="./Screenshots/logo.png" width="400">
+    <img src="assets/README/Banner.jpg" width="400">
 </p>
 # Slice of Life
 
-## About
+## Home Page
 
-This website is my submission for the Future Business Leaders of America state and national leadership conferences. Per the 2022-2023 prompt, this website serves as a multifaceted tool for community at Slice of Life (named after my APCS teacher) to 
-* Input and view their schedules
-* Get up-to-date information about extracurricular activities
-* Check what's on the lunch menu
-* Email their teachers and peers
-* Track school events 
+This website is our submission for the Future Business Leaders of America state and national leadership conferences. Per the 2022-2023 prompt, this website serves as a business tool for the community to ____ at Slice of Life to 
+* Access Slice of Life's appetizer, ontray, and dessert menu
+* Order or book a table 
+* Find more information regarding the history of Slice of Life
+* Read our customer's most recent reviews on quality of food, atmposphere, and service
+* Contact and location information
 
-### Prerequisites
+### About
 
 - Android 7.0 lollipop or higher
     - Unrestricted internet connection
@@ -20,7 +20,7 @@ This website is my submission for the Future Business Leaders of America state a
     - The latest version of android studio is installed
     - API 22 is the android emulator's target API
 
-## Installation Instructions
+## Book a Table
 
 - Download the app-release.apk file to your computer
 - Enable usb storage on the target android device (API 22+)
@@ -42,19 +42,19 @@ This website is my submission for the Future Business Leaders of America state a
     - The application should build and open on the android emulator
 
 
-### Login Screen
+### Menu
 <p align="center">
     <img src="./Screenshots/login_demo.gif" width="300">
 </p>
 The application's authentication system is integrated with Google Firebase. As such when a user logs in with his or her credentials, they are sent to Firebase and verified against an encrypted keystore. If the credentials are valid, Firebase returns a unique client ID corresponding to the user. The application then uses this client ID to query the DynamoDB users table through the API to obtain identification information about the user (name, email, title, profile picture etc). This information is passed throughout the application, thereby allowing each user to have an customized experience unique to him or her.
 
-#### Home Screen
+#### Reviews
 <p align="center">
     <img src="./Screenshots/homescreen_demo.png" width="300">
 </p>
 On the home screen, users can view identification information like their title and email address. They also have the ability to report bugs to the developer for continuous improvement.
 
-#### Schedule Screen
+#### Contact Us
 <p align="center">
     <img src="./Screenshots/schedule_demo.gif" width="300">
 </p>
@@ -65,34 +65,6 @@ Users can also click the floating action button in the bottom-right corner to op
 
 Changes to course details are updating in real-time and users can view their updated schedule immediately.
 
-#### Menu Screen
-<p align="center">
-    <img src="./Screenshots/menu_demo.gif" width="300">
-</p>
-
-On the menu tab, users can see what the Slice of Life cafeteria will be serving in the upcoming week. Meal information is segmented into a scrollable view consisting of a main course, side dish, drink, and dessert. Like the schedule tab, users can easily filter by each day of the week to see when each meal will be served. An image of each food item as well as nutritional information is also provided for user convenience. 
-
-#### Calendar Screen
-<p align="center">
-    <img src="./Screenshots/calendar_demo.gif" width="300">
-</p>
-
-On the calendar tab, users can view all of the exciting events happening at Slice of Life. Users are presented with a scrollable calendar that allows for a seamless events unencumbered by button presses and dropdown menus. Dates with events have a blue circle underneath them. 
-
-When clicked, the main calendar view retracts and users can see the events listed in the selected week along with the time and location of each event.
-
-When an event is clicked, a modal appears provided users with the ability to view and edit all information pertaining to the event. As is the case with other screens, all changes made in the modal are persisted in the database and changes are reflected for all users in real-time
-
-#### Activities Screen
-<p align="center">
-    <img src="./Screenshots/activities_demo.gif" width="300">
-</p>
-
-On the activities tab, users can view fun ways to stay involved at Slice of Life and make the most of their time as students. Here, users scroll through the top pane to see various clubs and teams they have the option of joining.
-
-When a club or team is clicked, the top card reflects the days and time it meets at as well as if it meets seasonally or year round.
-
-The bottom card presents users with a scrollable roster of all members present in the club, along with their respective profile pictures and positions
 
 #### Email Screen
 <p align="center">
